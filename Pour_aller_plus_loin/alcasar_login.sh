@@ -8,6 +8,7 @@
 ## send post request ##
 
     curl -i \
-    -H "Content-Type: application/x-www-form-urlencoded" \
-    -X POST -F "challenge=$challenge" -F "username=clement.marin@laplateforme.io" -F "password=Minecraft01@" https://alcasar.laplateforme.io/intercept.php \
+    -H "Content-Type: multipart/form-data" \
+    -X POST -F "challenge=$challenge" -F "username=clement.marin@laplateforme.io" -F "password=Minecraft01@" -F "button=Authentication" https://alcasar.laplateforme.io/intercept.php \
     --location 
+    echo $challenge
